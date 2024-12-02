@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,9 +12,9 @@ import { NavBarComponentComponent } from './nav-bar-component/nav-bar-component.
 import { ApartementsComponentComponent } from './Apartements/apartements-component/apartements-component.component';
 import { ApartementsByResidenceComponentComponent } from './Apartements/apartements-by-residence-component/apartements-by-residence-component.component';
 import { AddApartementComponentComponent } from './Apartements/add-apartement-component/add-apartement-component.component';
-import { ResidencesComponentComponent } from './Residences/residences-component/residences-component.component';
 import { ResidenceDetailsComponentComponent } from './Residences/residence-details-component/residence-details-component.component';
 import { AddResidenceComponentComponent } from './Residences/add-residence-component/add-residence-component.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -29,14 +28,14 @@ import { AddResidenceComponentComponent } from './Residences/add-residence-compo
     ApartementsComponentComponent,
     ApartementsByResidenceComponentComponent,
     AddApartementComponentComponent,
-    ResidencesComponentComponent,
     ResidenceDetailsComponentComponent,
     AddResidenceComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

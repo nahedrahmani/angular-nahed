@@ -1,0 +1,18 @@
+.custom-next-button {
+    background-color: #c37261; 
+    color: white;
+    border: none;
+  }
+  
+  .custom-add-button {
+    background-color: #438652; 
+    color: white;
+    border: none;
+  }
+  
+  .custom-update-button {
+    background-color: #cdb97d; 
+    color: black;
+    border: none;
+  }
+  

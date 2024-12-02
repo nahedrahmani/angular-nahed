@@ -6,16 +6,21 @@ import { NotFoundComponentComponent } from './not-found-component/not-found-comp
 import { ResidenceDetailsComponentComponent } from './Residences/residence-details-component/residence-details-component.component';
 import { ApartementsByResidenceComponentComponent } from './Apartements/apartements-by-residence-component/apartements-by-residence-component.component';
 import { ApartementsComponentComponent } from './Apartements/apartements-component/apartements-component.component';
+import { AddResidenceComponentComponent } from './Residences/add-residence-component/add-residence-component.component';
+import { AddApartementComponentComponent } from './Apartements/add-apartement-component/add-apartement-component.component';
 
 const routes: Routes = [
   
   {path:'home',component:HomeComponent},
   {path:'residences1',component:ResidencesComponent},
-  { path: 'residences/:id', component: ResidenceDetailsComponentComponent }, // Route détails de la résidence
-  { path: 'residences/:id/apartments', component: ApartementsByResidenceComponentComponent }, // Route appartements d'une résidence
-  { path: 'apartments', component:ApartementsComponentComponent }, // Route liste des appartements
- 
+  { path: 'residences/:id', component: ResidenceDetailsComponentComponent }, 
+  { path: 'apartments', component:ApartementsComponentComponent }, 
+  { path: 'add-residence', component: AddResidenceComponentComponent },
+  { path: 'update-residence/:id', component: AddResidenceComponentComponent },
+  { path: 'add-apartment', component: AddApartementComponentComponent },
+  { path: 'residences/:id/apartments', component: ApartementsByResidenceComponentComponent },
   { path: '**', component: NotFoundComponentComponent },
+
 ];
 
 @NgModule({

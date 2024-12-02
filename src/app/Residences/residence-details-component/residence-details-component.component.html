@@ -1,0 +1,14 @@
+<h1>Residence Details for ID: {{ residenceId }}</h1>
+
+<button (click)="goToNextResidence()" class="custom-next-button btn d-block mb-1">
+    Next
+  </button>
+  
+  <button [routerLink]="['/add-residence']" class="custom-add-button btn d-block mb-1">
+    Add Residence
+  </button>
+  
+  <button [routerLink]="['/update-residence', residenceId]" class="custom-update-button btn d-block mb-1">
+    Update Residence
+  </button>
+  
